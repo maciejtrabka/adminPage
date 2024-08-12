@@ -1,0 +1,234 @@
+* {
+  gap: 5px;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --color-primary: #60a5fa;
+  --color-secondary: #dbeafe;
+  --color-background: #eff6ff;
+  --color-accent: rgb(255, 211, 80);
+  --color-white: white;
+  --color-text: gray;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebarContainer {
+  background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4fr 10fr;
+  row-gap: 10px;
+  color: var(--color-white);
+}
+
+.mainConatiner {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.navButtonContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 4fr;
+}
+.navHeaderContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 3fr;
+}
+.navLogo {
+}
+.nav1 {
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+}
+
+.nav2 {
+}
+
+.headerContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px;
+}
+
+.headers {
+  font-weight: bold;
+  margin: 10px;
+  font-size: large;
+}
+
+.headersSearchContainer {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.headersSearchLoupeIcon {
+}
+
+.headersSearchBar {
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--color-white);
+}
+
+.headersIconsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.headersIconsBell {
+}
+
+.headersIconsUserIcon {
+}
+
+.headersIconsUserName {
+}
+
+.headersUser {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+}
+
+.headersUserIcon {
+}
+
+.headerUserTextContainer {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.headersUserGreetings {
+  font-weight: bold;
+  font-size: small;
+}
+
+.headersUserName {
+  font-weight: bold;
+  align-content: center;
+  font-size: large;
+}
+
+.headersMenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.headerMenuButton {
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-weight: bold;
+}
+
+.mainContentContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--color-secondary);
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.projectsContainer {
+  background-color: var(--color-secondary);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.projectContainer {
+  background-color: var(--color-white);
+  border-radius: 8%;
+  padding: 10px;
+  border-left: 10px solid var(--color-accent);
+  gap: 10px;
+  display: grid;
+}
+
+.projectHeader {
+  font-weight: bold;
+}
+
+.projectDescription {
+  color: var(--color-text);
+}
+
+.projectIcons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.announcementsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  row-gap: 40px;
+  background-color: var(--color-white);
+}
+.annContainer {
+  display: grid;
+  row-gap: 10px;
+}
+.annTitle {
+  font-weight: bold;
+}
+.annDescription {
+  color: var(--color-text);
+}
+
+.trending {
+  grid-area: trending;
+}
+
+.trendingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color-white);
+  padding: 20px;
+}
+
+.trend {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+}
+.trendText {
+  font-size: small;
+  display: grid;
+  gap: 10px;
+}
+.trendMail {
+}
+.trendDescription {
+}
